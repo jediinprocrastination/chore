@@ -1,0 +1,8 @@
+{
+    "profiles": {
+        "Chore.Runner": {
+            "commandName": "Project",
+            "commandLineArgs": "sandbox"
+        }
+    }
+}
