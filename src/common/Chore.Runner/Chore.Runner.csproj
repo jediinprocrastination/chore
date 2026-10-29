@@ -10,7 +10,7 @@
 
   <PropertyGroup>
     <PackageId>Chore.Cli</PackageId>
-    <Version>0.0.0-beta1</Version>
+    <Version>0.0.0-beta.2</Version>
     <Authors>Alex Zhedik</Authors>
     <Description>Cli tools to speed up software development routines</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
