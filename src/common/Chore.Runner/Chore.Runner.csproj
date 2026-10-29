@@ -10,27 +10,13 @@
 
   <PropertyGroup>
     <PackageId>Chore.Cli</PackageId>
-    <Version>0.0.0-betta1</Version>
+    <Version>0.0.0-beta1</Version>
     <Authors>Alex Zhedik</Authors>
     <Description>Cli tools to speed up software development routines</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(Configuration)' == 'Release'">
-    <None
-      Include="..\..\handlers\Chore.*\bin\$(Configuration)\$(TargetFramework)\**\*.*"
-      Link="Handlers\%(Filename)%(Extension)"
-      Pack="true"
-      PackagePath="tools\$(TargetFramework)\any\Handlers"
-      CopyToOutputDirectory="Never"
-    ></None>
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(Configuration)' == 'Debug'">
-    <None
-      Include="..\..\handlers\Chore.*\bin\$(Configuration)\$(TargetFramework)\**\*.*"
-      Link="Handlers\%(Filename)%(Extension)"
-      CopyToOutputDirectory="Always"
-    ></None>
+  <ItemGroup>
+    <ProjectReference Include="..\..\handlers\Chore.Sandbox\Chore.Sandbox.csproj" />
   </ItemGroup>
 </Project>
