@@ -13,8 +13,7 @@ internal class Program
         if (args is { Length: < 1 })
             return;
 
-        var currentDirectory = GetCurrentDirectory();
-        var handlersDirectory = Path.Combine(currentDirectory, Const.HandlerDirectoryName);
+        var handlersDirectory = GetRunnerExecutableDirectory();
 
         var handlerName = $"{Const.HandlerExecutablePrefix}.{args.ElementAt(0)}.exe";
         var handlerPath = Path.Combine(handlersDirectory, handlerName);
@@ -34,7 +33,7 @@ internal class Program
         process?.WaitForExit();
     }
 
-    private static string GetCurrentDirectory()
+    private static string GetRunnerExecutableDirectory()
     {
         var thisAssembly = Assembly.GetExecutingAssembly();
         var thisAssemblyLocation = thisAssembly.Location;
@@ -54,6 +53,5 @@ internal class Program
     private static class Const
     {
         public const string HandlerExecutablePrefix = "Chore";
-        public const string HandlerDirectoryName = "Handlers";
     }
 }
