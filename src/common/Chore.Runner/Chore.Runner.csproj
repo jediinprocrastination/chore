@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>chore</ToolCommandName>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Chore.Cli</PackageId>
+    <Version>0.0.0-beta.2</Version>
+    <Authors>Alex Zhedik</Authors>
+    <Description>Cli tools to speed up software development routines</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\handlers\Chore.Sandbox\Chore.Sandbox.csproj" />
+  </ItemGroup>
+</Project>
