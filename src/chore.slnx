@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Common/">
+    <Project Path="common/Chore.Runner/Chore.Runner.csproj" />
+  </Folder>
+  <Folder Name="/Handlers/">
+    <Project Path="handlers/Chore.Sandbox/Chore.Sandbox.csproj" />
+  </Folder>
+  <Folder Name="/Solution/">
+    <File Path=".csharpierrc.json" />
+    <File Path="Directory.Build.props" />
+  </Folder>
+</Solution>
